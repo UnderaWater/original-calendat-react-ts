@@ -7,8 +7,8 @@ const CalendarHeader: React.FC = () => {
 
         </div>
         <div>
-          <button className='btn'></button>
-          <button className='btn'></button>
+          <button className='btn'>Prev</button>
+          <button className='btn'>Next</button>
         </div>
       </header>
   )
