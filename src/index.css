@@ -3,3 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: #7485e6;
+}

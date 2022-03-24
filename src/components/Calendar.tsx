@@ -1,13 +1,11 @@
 import React from 'react'
 
-const Calendar: React.FC<{}> = ({}) => {
+const Calender = () => {
   return (
-    <div className='calendar-container'>
-        <div>
-
-        </div>
+    <div>
+      Calendar
     </div>
-  )
-}
+  );
+};
 
-export default Calendar;
+export default Calender;
