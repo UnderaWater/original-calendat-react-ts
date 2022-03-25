@@ -37,7 +37,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <div className='calendar__days'>
-      {days.map((day: any, index: any) => (
+      {days.map((day, index) => (
             <Day
               key={index}
               day={day}

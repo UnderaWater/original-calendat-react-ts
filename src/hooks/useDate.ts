@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
 
+interface IDays {
+    value: string | number,
+    isCurrentDay: boolean,
+    date: string
+}
+
 export const useDate = (nav: number) => {
-    const [days, setDays] = useState<any>([]);
-    const [dateDisplay, setDateDisplay] = useState('');
+    const [days, setDays] = useState<IDays[]>([]);
+    const [dateDisplay, setDateDisplay] = useState<string>('');
 
     useEffect(() => {
         const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];

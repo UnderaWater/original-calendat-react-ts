@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Day: React.FC<any> = ({ day }) => {
+const Day: React.FC<any> = (day) => {
     const classValue = `day ${day.value === 'padding' ? 'padding' : ''} ${day.isCurrentDay ? 'currentDay' : ''}`;
 
     return (
