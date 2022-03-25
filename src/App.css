@@ -1,4 +1,11 @@
-.btn {
+body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: #2a2b2c;
+}
+
+button {
   margin-right: 2.5px;
   margin-left: 2.5px;
   width: 75px;
@@ -8,12 +15,12 @@
   outline: none;
   padding: 5px;
   border-radius: 5px;
-  color: white;
+  color: #f3eded;
 }
 
 .calendar__header {
   padding: 10px;
-  color: #d36c6c;
+  color: #f3eded;
   font-size: 26px;
   font-family: sans-serif;
   display: flex;
@@ -21,7 +28,7 @@
 }
 
 .calendar__header button {
-  background-color: #92a1d1;
+  background-color: #bb4242;
 }
 
 .calendar-container {
@@ -31,7 +38,7 @@
 .calendar__weekdays {
   width: 100%;
   display: flex;
-  color: #247BA0;
+  color: #f3eded;
 }
 
 .calendar__weekdays div {
@@ -44,4 +51,36 @@
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+}
+
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.day:hover {
+  background-color: #bb4242;
+}
+
+.day+.currentDay {
+  background-color: #f3eded;
+}
+
+.padding {
+  cursor: default !important;
+  background-color: #2a2b2c !important;
+  box-shadow: none !important;
+}
+
+.calendar__weekdays div {
+  width: 100px;
+  margin-left: 14px;
 }
